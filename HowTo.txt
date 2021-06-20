@@ -13,3 +13,7 @@ create database dbtest owner=usertest;
 
 --> How to run 
 # uvicorn main:app --reload
+
+Para resolver el error "ModuleNotFoundError: No module named 'psycopg2'" after your line metadata = sqlalchemy.MetaData() ?
+
+pip install psycopg2-binary
